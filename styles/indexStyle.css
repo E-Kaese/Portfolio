@@ -1,0 +1,23 @@
+.navbar-nav{
+    margin: 0px;
+    padding: 5px;
+    background-color: #353535;
+    height: auto;
+}
+
+.nav{
+    color: red;
+}
+
+li a{
+    color: red;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+li a:hover{
+    color: red;
+    background-color: #353535;
+    border: 2px solid red;
+    border-radius: 5px;
+}
