@@ -5,19 +5,20 @@
     height: auto;
 }
 
-.nav{
-    color: red;
-}
-
 li a{
-    color: red;
+    color: skyblue;
+    background-color: #353535;
     text-shadow: none;
     font-size: 20px;
 }
 
 li a:hover{
-    color: red;
-    background-color: #353535;
-    border: 2px solid red;
+    color: skyblue;
+    border: 2px solid white;
     border-radius: 5px;
+    padding: 8px 13px;
+}
+
+.nav > li > a:hover{
+    background-color: #353535;
 }
