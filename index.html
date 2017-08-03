@@ -4,6 +4,7 @@
 <head>
     <title>Ernst Kaese - Profile</title>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -22,20 +23,92 @@
     <nav class="navbar navbar-nav navbar-fixed-top">
         <div class="container-fluid">
             <ul class="nav nav-justified nav-pills">
-                <li><a href="">Start Here</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Mad Skills</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="#whoAmI">Start Here</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#madSkills">Mad Skills</a></li>
+                <li><a href="#contactMe">Contact Me</a></li>
             </ul>
         </div>
     </nav>
-    <div>
-        
+    <span id="whoAmI"></span>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>Who am I:</h4>
+            <img src="./img/faceshot.jpg" alt="A picture of my pimply face" class="face"/>
+            <p>My name is Ernst Kaese, welcome to my profile.</p>
+        </div>
     </div>
-    <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="lib/jQuery/jQuery.js"></script>
-    <script type="text/javascript" src="lib/ReactJS/react.js"></script>
-    <script type="text/javascript" src="lib/ReactJS/react-dom.js"></script>
+    <span id="aboutMe"></span>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>About me:</h4>
+            <p>I am an enthusiastic person who is always driven to expand my boundaries. I am curiousity driven and will research
+                anything that catches my eye or that I need in order to complete a task I am unfamiliar with. I am currently
+                putting most of my time into learning new coding technologies as I am an aspiring programmer/ developer.
+                Programming comes naturally to me due to my methodical ways of solving problems. Logical thinking is one
+                of my strongest traits. I take pride in the neatness and quality of my work, the perfectionist in me insures
+                pinpoint accuracy with aligning elements for webpages and having neat code.</p>
+        </div>
+    </div>
+    <span id="education"></span>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>Education:</h4>
+            <p>
+                <u>High School:</u>
+                I attended Worcester Gimnasium High School from 2012 to 2017 and passed with a bachelor's pass.
+                <br>
+                <u>Subjects:</u>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Physical Science</li>
+                    <li>Information Technology</li>
+                    <li>Accounting</li>
+                    <li>English</li>
+                    <li>Afrikaans</li>
+                    <li>Life Orientation</li>
+                </ul>
+                Directly after school I started the Java Post Matric course at Capaciti for 7 months.</p>
+        </div>
+    </div>
+    <span id="madSkills"></span>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>Mad Skills:</h4>
+            <p>
+                <u>Coding related:</u>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Javascript</li>
+                    <li>AngularJS</li>
+                    <li>ReactJS</li>
+                    <li>Python</li>
+                </ul>
+                <u>Not coding related:</u>
+                <ul>
+                    <li>Piano(Grade 6 Trinity Theory and Practical)</li>
+                    <li>German(Level 1)</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <span id="contactme"></span>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>Contact Me:</h4>
+            <form action="https://formspree.io/ernstkaese@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Name" class="textField">
+                <br>
+                <input type="email" name="_replyto" placeholder="Email" class="textField">
+                <br>
+                <textarea rows="" cols="" name="message" placeholder="Message" class="textArea"></textarea>
+                <input type="submit" value="Send" class="button">
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
