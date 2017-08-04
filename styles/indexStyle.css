@@ -7,6 +7,7 @@
     padding: 0.5% 0%;
     background-color: #2c3e50;
     height: auto;
+    box-shadow: 0px 4px 5px #888888;
 }
 
 li a{
@@ -27,7 +28,7 @@ li a:hover{
 }
 
 li a:active{
-    background-color: 
+    background-color: #4c6983;
 }
 
 .nav > li > a:hover{
@@ -43,13 +44,14 @@ body{
     margin: 2% 20%;
     background: transparent;
     border-top: 3px solid #33cccc;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 .panel-body{
     color: #4c6983;
 }
 
-@media screen and (max-width: 775px){
+@media screen and (max-width: 768px){
     body{
         padding-top: 22rem;
     }
@@ -83,4 +85,14 @@ p{
 .face{
     width: 40%;
     border-radius: 10px;
+}
+
+.anchor{
+    margin-top: -5%;
+    padding-top: 5%;
+}
+
+.button{
+    margin: 1%;
+    width: 35%;
 }
