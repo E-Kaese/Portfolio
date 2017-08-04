@@ -38,6 +38,7 @@ li a:active{
 body{
     background-image: url("../img/background.png");
     padding-top: 6rem;
+    font-size: 18px;
 }
 
 .panel{
@@ -51,6 +52,11 @@ body{
     color: #4c6983;
 }
 
+.anchor{
+    margin-top: -5%;
+    padding-top: 5%;
+}
+
 @media screen and (max-width: 768px){
     body{
         padding-top: 22rem;
@@ -58,6 +64,11 @@ body{
 
     .panel{
         margin: 2% 3%;
+    }
+
+    .anchor{
+        margin-top: -40%;
+        padding-top: 40%;
     }
 }
 
@@ -68,7 +79,7 @@ h4{
 }
 
 p{
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .textField{
@@ -85,11 +96,6 @@ p{
 .face{
     width: 40%;
     border-radius: 10px;
-}
-
-.anchor{
-    margin-top: -5%;
-    padding-top: 5%;
 }
 
 .button{
