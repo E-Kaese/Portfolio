@@ -24,9 +24,9 @@
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
-                        scrollTop: $(hash).offset().top
+                        scrollTop: ($(hash).offset().top - $('#navbar').outerHeight())
                     }, 600, function () {
-                        window.location.hash = hash;
+                        window.location.hash = (hash - $('#navbar').outerHeight());
                     });
                 }
             });
@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-nav navbar-fixed-top">
+    <nav class="navbar navbar-nav navbar-fixed-top" id="navbar">
         <div class="container-fluid">
             <ul class="nav nav-justified nav-pills">
                 <li><a href="#whoAmI">Start Here</a></li>

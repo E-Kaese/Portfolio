@@ -51,11 +51,6 @@ body{
     color: #4c6983;
 }
 
-.anchor{
-    margin-top: -4%;
-    padding-top: 4%;
-}
-
 @media screen and (max-width: 768px){
     body{
         padding-top: 22rem;
@@ -63,11 +58,6 @@ body{
 
     .panel{
         margin: 2% 3%;
-    }
-
-    .anchor{
-        margin-top: -30%;
-        padding-top: 30%;
     }
 }
 
