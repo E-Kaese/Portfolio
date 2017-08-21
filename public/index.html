@@ -13,10 +13,11 @@
         crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link href="styles/indexStyle.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script>
         $(document).ready(function () {
             $("a").on('click', function (event) {
@@ -24,10 +25,8 @@
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
-                        scrollTop: ($(hash).offset().top - $('#navbar').outerHeight())
-                    }, 600, function () {
-                        window.location.hash = (hash - $('#navbar').outerHeight());
-                    });
+                        scrollTop: $(hash).offset().top - $('#navbar').outerHeight()
+                    }, 600);
                 }
             });
         });
@@ -38,14 +37,14 @@
     <nav class="navbar navbar-nav navbar-fixed-top" id="navbar">
         <div class="container-fluid">
             <ul class="nav nav-justified nav-pills">
-                <li><a href="#whoAmI">Start Here</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#madSkills">Mad Skills</a></li>
-                <li><a href="#contactMe">Contact Me</a></li>
+                <li><a href="#WhoAmI">Start Here</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#MadSkills">Mad Skills</a></li>
+                <li><a href="#ContactMe">Contact Me</a></li>
             </ul>
         </div>
     </nav>
-    <span class="anchor" id="whoAmI"></span>
+    <span class="anchor" id="WhoAmI"></span>
     <div class="panel panel-default">
         <div class="panel-body">
             <h4>Who am I:</h4>
@@ -53,7 +52,7 @@
             <p>My name is Ernst Kaese, welcome to my profile.</p>
         </div>
     </div>
-    <span class="anchor" id="aboutMe"></span>
+    <span class="anchor" id="AboutMe"></span>
     <div class="panel panel-default">
         <div class="panel-body">
             <h4>About me:</h4>
@@ -65,7 +64,7 @@
                 pinpoint accuracy with aligning elements for webpages and having neat code.</p>
         </div>
     </div>
-    <span class="anchor" id="education"></span>
+    <span class="anchor" id="Education"></span>
     <div class="panel panel-default">
         <div class="panel-body">
             <h4>Education:</h4>
@@ -86,7 +85,7 @@
                 Directly after school I started the Java Post Matric course at Capaciti for 7 months.</p>
         </div>
     </div>
-    <span class="anchor" id="madSkills"></span>
+    <span class="anchor" id="MadSkills"></span>
     <div class="panel panel-default">
         <div class="panel-body">
             <h4>Mad Skills:</h4>
@@ -110,7 +109,7 @@
             </p>
         </div>
     </div>
-    <span class="anchor" id="contactMe"></span>
+    <span class="anchor" id="ContactMe"></span>
     <div class="panel panel-default">
         <div class="panel-body">
             <h4>Contact Me:</h4>
