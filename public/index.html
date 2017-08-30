@@ -18,15 +18,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link href="assets/css/indexStyle.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <script>
         $(document).ready(function () {
+            $('.navbar-collapse ul li a').click(function () {
+                $('.navbar-toggle:visible').click();
+            });
             $("a").on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
                     $('html, body').animate({
-                        scrollTop: $(hash).offset().top - $('#navbar').outerHeight()
+                        scrollTop: $(hash).offset().top - 50
                     }, 600);
                 }
             });
@@ -35,14 +38,22 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-nav navbar-fixed-top" id="navbar">
+    <nav class="navbar navbar-nav navbar-fixed-top">
         <div class="container-fluid">
-            <ul class="nav nav-justified nav-pills">
-                <li><a href="#WhoAmI">Start Here</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#MadSkills">Mad Skills</a></li>
-                <li><a href="#ContactMe">Contact Me</a></li>
-            </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#collapse">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div id="collapse" class="collapse navbar-collapse">
+                <ul class="nav nav-justified nav-pills">
+                    <li><a href="#WhoAmI">Start Here</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#MadSkills">Mad Skills</a></li>
+                    <li><a href="#MyProjects">My Projects</a></li>
+                    <li><a href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <span class="anchor" id="WhoAmI"></span>
@@ -50,7 +61,7 @@
         <div class="panel-body">
             <img src="./assets/img/left arrow.png" alt="left arrow" class="col-md-4 arrows" />
             <div class="col-md-4">
-            <h4>Who am I:</h4>
+                <h4>Who am I:</h4>
                 <p>My name is Ernst Kaese,</p>
                 <p class="txt-rotate" data-period="1000" data-rotate='[ "welcome to my portfolio.", "welcome to my website." ]'></p>
                 <a href="https://www.instagram.com/ernst_kaese/" target="_blank"><img src="./assets/img/faceshot.jpg" alt="A picture of my face" class="face float" /></a>
@@ -64,8 +75,8 @@
             <h4 class="centerText">About me:</h4>
             <p>I am an enthusiastic person who is always driven to expand my boundaries. I am curiousity driven and will research
                 anything that catches my eye or that I need in order to complete a task I am unfamiliar with. I am currently
-                putting most of my time into learning new coding technologies as I'm an aspiring developer. Logical thinking is one
-                of my strongest traits. Programming comes naturally to me due to my methodical ways of solving problems.
+                putting most of my time into learning new coding technologies as I'm an aspiring developer. Logical thinking
+                is one of my strongest traits. Programming comes naturally to me due to my methodical ways of solving problems.
                 I take pride in the neatness and quality of my work, the perfectionist in me insures accuracy and neat code.</p>
         </div>
     </div>
@@ -74,20 +85,21 @@
         <div class="panel-body col-md-8 col-md-offset-2">
             <h4 class="centerText">Education:</h4>
             <p class="centerText">
-                <u>High School:</u> I attended Worcester Gymnasium High School from 2012 to 2017 and passed with a bachelor's
-                pass.</p>
-                <div class="subjects">
-                    <u>Subjects:</u>
-                    <ul>
-                        <li>Mathematics</li>
-                        <li>Physical Science</li>
-                        <li class="txt-rotate" data-period="1000" data-rotate='[ "Information Technology", "01001001 01010100", "IT" ]'></li>
-                        <li>Accounting</li>
-                        <li>English</li>
-                        <li>Afrikaans</li>
-                        <li>Life Orientation</li>
-                    </ul>
-                </div>
+                <u>High School:</u><br>I attended Worcester Gymnasium High School from 2012 to 2017 and passed with a bachelor's
+                pass.
+            </p>
+            <div class="subjects">
+                <u>Subjects:</u>
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Physical Science</li>
+                    <li class="txt-rotate" data-period="1000" data-rotate='[ "Information Technology", "01001001 01010100", "IT" ]'></li>
+                    <li>Accounting</li>
+                    <li>English</li>
+                    <li>Afrikaans</li>
+                    <li>Life Orientation</li>
+                </ul>
+            </div>
             <p class="centerText">Directly after school I started the Java Post Matric course at Capaciti for 7 months.</p>
         </div>
     </div>
@@ -103,7 +115,7 @@
                     <li>CSS</li>
                     <li>Bootstrap</li>
                     <li>Javascript</li>
-                    <li>AngularJS</li>
+                    <li>Angular</li>
                     <li>ReactJS</li>
                     <li>Python</li>
                 </ul>
@@ -115,20 +127,35 @@
             </p>
         </div>
     </div>
+
+    <span class="anchor" id="MyProjects"></span>
+    <div class="panel panel-default row">
+        <div class="panel-body col-md-4 col-md-offset-4 centerText">
+            <h4>My Projects:</h4>
+            <p>Here are a some projects I've worked on:</p>
+            <div class="projects float">
+                <a href="https://younglings-101.firebaseapp.com" target="_blank">
+                    <img src="assets/img/alienWorldp3.png" alt="younglings project" class="img-responsive"/>
+                    Younglings 101<br>Website
+                </a>
+            </div>
+        </div>
+    </div>
+
     <span class="anchor" id="ContactMe"></span>
     <div class="panel panel-default row">
         <div class="panel-body container-fluid">
             <img src="./assets/img/left arrow.png" alt="left arrow" class="col-md-4 arrows" />
             <div class="col-md-4">
                 <h4 class="centerText">Contact Me:</h4>
-                <form action="https://formspree.io/ernstkaese@gmail.com" method="POST">
+                <form action="https://formspree.io/ernstkaese@gmail.com" method="POST" class="form">
                     <input type="text" name="name" placeholder="Name" class="textField" required>
                     <br>
                     <input type="email" name="_replyto" placeholder="Email" class="textField" required>
                     <br>
                     <textarea rows="" cols="" name="message" placeholder="Message" class="textArea" required></textarea>
                     <br>
-                    <input type="submit" value="Send" class="button">
+                    <button type="submit" class="button"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send</button>
                 </form>
                 <div class="row mediaButtons">
                     <a href="https://www.linkedin.com/in/ernst-kaese-9203b0141/" target="_blank" class="col-md-6"><button type="button" class="button"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</button></a>

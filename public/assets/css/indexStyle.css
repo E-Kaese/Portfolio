@@ -5,10 +5,11 @@
 
 .navbar-nav{
     margin: 0px;
-    padding: 0.5% 0%;
+    padding: 0px;
     background-color: #2A3948;
     height: auto;
-    box-shadow: 0px 4px 5px #747474;
+    box-shadow: 0px 5px 15px #3A96AF;
+    border-bottom: 2px solid #33cccc;
 }
 
 li a{
@@ -17,6 +18,12 @@ li a{
     text-shadow: none;
     font-size: 20px;
     margin: 0px 2%;
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: #33cccc;
 }
 
 li a:hover{
@@ -32,11 +39,15 @@ li a:hover{
     background-color: #2A3948;
 }
 
+.nav >li > a:active{
+    background-color: #2A3948;
+}
+
 body{
     background-image: url("../img/blue background.jpg");
     animation: animatedBackground 60s linear infinite;
     font-size: 18px;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .panel{
@@ -90,13 +101,12 @@ body{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 768px){
     body{
-        padding-top: 22rem;
+        padding-top: 5rem;
     }
-
     .panel{
-        margin: 2% 3%;
+        margin: 3% 0px;
     }
 
     .subjects{
@@ -118,7 +128,6 @@ p{
     width: 100%;
     margin: 1%;
     background-color: #676767;
-    color: #12CCFF;
 }
 
 .textArea{
@@ -126,12 +135,11 @@ p{
     margin: 1%;
     height: 5%;
     background-color: #676767;
-    color: #12CCFF;
 }
 
 .face{
     width: 40%;
-    box-shadow: 5px 5px 5px #3A96AF;
+    box-shadow: 0px 0px 10px #3A96AF;
     border: 3px solid #388186;
     border-radius: 10px;
 }
@@ -163,4 +171,57 @@ p{
     -ms-transform:translate(0px,-8px);
     -o-transform:translate(0px,-8px);
     transform:translate(0px,-8px);
+    cursor: pointer;
+}
+
+.form ::-webkit-input-placeholder {
+    color: #12CCFF !important;
+    opacity: 1;
+}
+
+.form ::-moz-placeholder {
+    color: #12CCFF !important;
+    opacity: 1;
+}
+
+.form ::-ms-placeholder {
+    color: #12CCFF !important;
+    opacity: 1;
+}
+
+.form ::placeholder {
+    color: #12CCFF !important;
+    opacity: 1;
+}
+
+.projects{
+    color: white;
+    border-radius: 10px;
+    background-color: #2A3948;
+    width: 30%;
+    box-shadow: 0px 0px 10px #3A96AF;
+    border: 3px solid #388186;
+    float: center;
+    margin: auto;
+    padding: 1%;
+}
+
+.projects a{
+    text-decoration: none;
+    color: white;
+}
+
+.projects img{
+    border: 1px solid #3A96AF;
+    border-radius: 10px;
+    background-color: #505050;
+}
+
+.hamburger{
+    color: #33cccc;
+    width: 100%;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
 }
