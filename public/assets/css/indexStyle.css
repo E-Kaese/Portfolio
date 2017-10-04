@@ -91,6 +91,30 @@ body{
     padding-top: 5%;
 }
 
+.projects{
+    color: white;
+    border-radius: 10px;
+    background-color: #2A3948;
+    width: 30%;
+    box-shadow: 0px 0px 10px #3A96AF;
+    border: 3px solid #388186;
+    float: center;
+    margin: auto;
+    padding: 1%;
+    margin-left: 65px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: white;
+}
+
+.projects img{
+    border: 1px solid #3A96AF;
+    border-radius: 10px;
+    background-color: #505050;
+}
+
 @media screen and (max-width: 991px){
     .arrows{
         display: none;
@@ -111,6 +135,10 @@ body{
 
     .subjects{
         margin-left: 10%;
+    }
+
+    .projects{
+        margin-left: 50px;
     }
 }
 
@@ -192,29 +220,6 @@ p{
 .form ::placeholder {
     color: #12CCFF !important;
     opacity: 1;
-}
-
-.projects{
-    color: white;
-    border-radius: 10px;
-    background-color: #2A3948;
-    width: 30%;
-    box-shadow: 0px 0px 10px #3A96AF;
-    border: 3px solid #388186;
-    float: center;
-    margin: auto;
-    padding: 1%;
-}
-
-.projects a{
-    text-decoration: none;
-    color: white;
-}
-
-.projects img{
-    border: 1px solid #3A96AF;
-    border-radius: 10px;
-    background-color: #505050;
 }
 
 .hamburger{
