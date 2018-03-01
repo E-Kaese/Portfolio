@@ -1,0 +1,25 @@
+<div class="row m-0 justify-content-center text-align-center">
+    <div [hidden]="submitted" class="col-md-4 my-5 justify-content-center">
+        <h3>Get in touch:</h3>
+        <form (ngSubmit)="onSubmit()" #messageForm='ngForm'>
+            <input type="text" placeholder="Full name" class="form-control mt-3" required [(ngModel)]="name" name="fullname" #fullName="ngModel" />
+            <div [hidden]="fullName.valid || fullName.pristine" class="alert alert-danger mt-1">
+                Full name is required
+            </div>
+            <input type="email" placeholder="Email" email class="form-control mt-3" required [(ngModel)]="email" name="email" #mail="ngModel" />
+            <div [hidden]="mail.valid || mail.pristine" class="alert alert-danger mt-1">
+                Please enter an email address
+            </div>
+            <textarea cols="30" rows="10" placeholder="Message" class="form-control my-3" required [(ngModel)]="message" name="message" #msg="ngModel"></textarea>
+            <div [hidden]="msg.valid || msg.pristine" class="alert alert-danger mt-1">
+                Message is required
+            </div>
+            <recaptcha (resolved)="resolve($event)" siteKey="6LdrZTYUAAAAAJve64r8DY5iG7uicmzdt36Ob2S1" name="captcha" required></recaptcha>
+            <button type="submit" class="btn btn-dark mx-auto mt-3" style="width:100%" [disabled]="!messageForm.form.valid || !this.resolved">Submit</button>
+        </form>
+    </div>
+    <div [hidden]="!submitted" class="col-md-6 my-5">
+        <h3>Thank you for your submission!</h3>
+        <h5>We will be in contact soon.</h5>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navbar">
+    <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto links">
+            <li class="nav-item" (click)="toggle()">
+                <a class="nav-link" [routerLink]="['/main']" href="#navbar" pageScroll [pageScrollDuration]="200">//Projects
+          <span class="sr-only">(current)</span>
+        </a>
+            </li>
+            <li class="nav-item" (click)="toggle()">
+                <a class="nav-link" [routerLink]="['/skills']" href="#navbar" pageScroll [pageScrollDuration]="200">//Skills</a>
+            </li>
+            <li class="nav-item" (click)="toggle()">
+                <a class="nav-link" [routerLink]="['/contact']" href="#navbar" pageScroll [pageScrollDuration]="200">//Contact Me</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto icons">
+            <!-- <li class="nav-item mt-2" (click)="toggle()">
+        <a class="nav-link" pageScroll [pageScrollDuration]="600" href="https://github.com/E-Kaese" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item mt-2" (click)="toggle()">
+        <a class="nav-link" pageScroll [pageScrollDuration]="600" href="https://www.linkedin.com/in/ernst-kaese-9203b0141/" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item mt-2" (click)="toggle()">
+        <a class="nav-link" pageScroll [pageScrollDuration]="600" href="https://www.facebook.com/ernst.kaese" target="_blank">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item mt-2" (click)="toggle()">
+        <a class="nav-link" pageScroll [pageScrollDuration]="600" href="https://www.instagram.com/ernst_kaese/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item mt-2" (click)="toggle()">
+        <a class="nav-link" pageScroll [pageScrollDuration]="600" href="mailTo:ernstkaese@gmail.com">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+      </li> -->
+            <li class="nav-item text-center" (click)="toggle()">
+                <a class="nav-link" href="#start" pageScroll [pageScrollDuration]="600">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    <div class="up">To top!</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

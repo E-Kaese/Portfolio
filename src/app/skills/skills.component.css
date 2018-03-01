@@ -1,0 +1,20 @@
+.about{
+    background-image: url('../../assets/img/congruent_outline.png');
+    min-height: 73vh;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a:hover{
+    text-decoration: none;
+}

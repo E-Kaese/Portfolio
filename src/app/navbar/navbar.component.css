@@ -1,0 +1,18 @@
+.links{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.icons{
+    font-size: 30px;
+}
+
+.up{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .icons{
+        display: none;
+    }
+}

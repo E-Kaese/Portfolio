@@ -1,0 +1,16 @@
+<div class="projects pb-3">
+    <h2 class="text-center pt-3">Projects:</h2>
+    <div class="row justify-content-center m-0">
+        <div *ngFor="let item of list" class="col-md-3">
+            <div class="card text-center">
+                <a href="{{item.url}}" target="_blank">
+                    <span class="badge badge-light mt-2 ml-2">{{item.state}}</span>
+                    <img class="card-img-top img-fluid" src="{{item.image}}" alt="{{item.name}}" />
+                    <div class="card-body p-0">
+                        <h4 class="card-title m-2 ml-3">{{item.name}}</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

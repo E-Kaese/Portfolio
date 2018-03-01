@@ -1,0 +1,35 @@
+Landing page:
+-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Audiowide|Berkshire+Swash|Orbitron|Press+Start+2P|Stalinist+One');
+
+    font-family: 'Stalinist One', cursive;
+
+    font-family: 'Amatic SC', cursive;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-family: 'Berkshire Swash', cursive;
+
+    font-family: 'Audiowide', cursive;
+
+    font-family: 'Press Start 2P', cursive;
+
+Navbar:
+-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    font-family: 'Open Sans', sans-serif;
+
+Content:
+-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    font-family: 'Roboto', sans-serif;
+
+LOGOS:
+-HTML:  https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png
+-CSS:   https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png
+-JS:    https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.png
+-Boot:  https://raw.githubusercontent.com/Mikescops/bootstrapbolttheme/master/icon-bootstrap.png
+-Ang:   https://angular.io/assets/images/logos/angular/angular.png
+-Java:  https://tinycode.hk/wp-content/uploads/2015/01/java-logo-png-300x300.png
+
+-Piano: https://png.icons8.com/piano/win10/1600
+-Germ:  http://www.buyflags.eu/sites/default/files/products-images/state-flags/nemeckovlajkatunel.png

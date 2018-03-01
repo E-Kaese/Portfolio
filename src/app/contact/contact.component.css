@@ -1,0 +1,14 @@
+.ng-valid[required],
+.ng-valid.required {
+    border-bottom: 2px solid #42A948;
+    /* green */
+}
+
+.btn {
+    cursor: pointer;
+}
+
+recaptcha {
+    position: relative;
+    margin: auto;
+}
