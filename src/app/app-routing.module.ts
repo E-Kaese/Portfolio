@@ -3,12 +3,19 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MetaGuard } from '@ngx-meta/core';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/main', pathMatch: 'full' },
-    { path: 'main', component: ProjectsComponent },
-    { path: 'skills', component: SkillsComponent },
-    { path: 'contact', component: ContactComponent }
+    {
+        path: '',
+        canActivateChild: [MetaGuard],
+        children: [
+            { path: '', redirectTo: '/main', pathMatch: 'full' },
+            { path: 'main', component: ProjectsComponent },
+            { path: 'skills', component: SkillsComponent },
+            { path: 'contact', component: ContactComponent }
+        ]
+    }
 ];
 
 @NgModule({
@@ -16,4 +23,4 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 
-export class AppRoutingModule {}
+export class AppRoutingModule { }
