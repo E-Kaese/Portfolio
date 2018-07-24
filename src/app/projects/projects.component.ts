@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class ProjectsComponent implements OnInit {
   list = [];
-  
+
   constructor(ds: DatabaseService) {
     this.list = ds.getProjects();
   }
