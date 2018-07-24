@@ -68,10 +68,10 @@ export function metaFactory(): MetaLoader {
     HttpModule,
     FormsModule,
     RecaptchaModule.forRoot(),
-    // MetaModule.forRoot({
-    //   provide: MetaLoader,
-    //   useFactory: (metaFactory)
-    // })
+    MetaModule.forRoot({
+      provide: MetaLoader,
+      useFactory: (metaFactory)
+    })
   ],
   providers: [AngularFireDatabaseModule, DatabaseService],
   bootstrap: [AppComponent]
