@@ -38,7 +38,7 @@ export function metaFactory(): MetaLoader {
       // tslint:disable-next-line:max-line-length
       description: 'My personal website to showcase projects I\'ve worked on and my skills.',
       // tslint:disable-next-line:max-line-length
-      'og:image': 'https://firebasestorage.googleapis.com/v0/b/ernst-kaese.appspot.com/o/thumbnail.png?alt=media&token=ee58708f-49d3-47d5-8854-9d1f65faa942',
+      'og:image': 'https://firebasestorage.googleapis.com/v0/b/ernst-kaese.appspot.com/o/thumbnail.png?alt=media&token=492ae401-45f7-47ca-8407-08c471a257a0',
       'og:description': 'My personal website to showcase projects I\'ve worked on and my skills.',
       'og:type': 'website',
       'og:locale': 'en',
