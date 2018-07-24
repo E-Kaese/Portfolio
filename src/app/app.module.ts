@@ -43,7 +43,7 @@ export function metaFactory(): MetaLoader {
       'og:type': 'website',
       'og:locale': 'en',
       'google-site-verification': 'pe3bDqeVWJ48p8iZblQ0kL6cMz6FXk_3ZYmtWSyhmao',
-      url: 'https://ernst-kaese.herokuapp.com/',
+      'og:url': 'https://ernst-kaese.herokuapp.com/',
       // tslint:disable-next-line:max-line-length
       keywords: 'Ernst, Ernst Kaese, Kaese, Junior Developer, Web developer, mobile developer, dev, portfolio, Angular developer'
     }
