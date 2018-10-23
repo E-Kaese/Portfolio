@@ -1,21 +1,22 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
-import { DatabaseService } from './database.service';
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { Ng2PageScrollModule } from 'ng2-page-scroll';
-import { RecaptchaModule } from 'ng2-recaptcha';
+import { RecaptchaModule } from 'ng-recaptcha';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
+import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
+import { DatabaseService } from './services/database.service';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyAV5rrybIZPNbyGmyxBq5y1qrdkEwXjZV0',
@@ -30,21 +31,22 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     StartPageComponent,
+    SkillsComponent,
     ProjectsComponent,
     NavbarComponent,
     FooterComponent,
-    SkillsComponent,
     ContactComponent
   ],
   imports: [
     BrowserModule,
-    Ng2PageScrollModule,
     AppRoutingModule,
+    ScrollToModule.forRoot(),
+    FontAwesomeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     HttpModule,
     FormsModule,
-    RecaptchaModule.forRoot(),
+    RecaptchaModule.forRoot()
   ],
   providers: [AngularFireDatabaseModule, DatabaseService],
   bootstrap: [AppComponent]

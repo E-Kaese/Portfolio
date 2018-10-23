@@ -1,5 +1,6 @@
-import { DatabaseService } from './../database.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, SystemJsNgModuleLoader } from '@angular/core';
+import { DatabaseService } from '../services/database.service';
+import { Project } from '../project';
 
 @Component({
   selector: 'app-projects',
@@ -8,10 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class ProjectsComponent implements OnInit {
-  list = [];
+  list: Project[] = [];
 
   constructor(ds: DatabaseService) {
-    this.list = ds.getProjects();
+    ds.projectsDB.valueChanges().subscribe(response => {
+      this.list = response;
+      this.list.sort(function(a, b) { return b.date - a.date; });
+    });
   }
 
   ngOnInit() {

@@ -13,8 +13,13 @@ h2{
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 0px;
 }
 
 a:hover{
     text-decoration: none;
+}
+
+.progress{
+    border-radius: 0px;
 }

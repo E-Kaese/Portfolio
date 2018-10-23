@@ -11,6 +11,17 @@
     font-size: 12px;
 }
 
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+
+button :focus{
+    border: none;
+}
+
 @media screen and (max-width: 600px) {
     .icons{
         display: none;
