@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
-import { Http } from '@angular/http';
+import { AngularFireFunctions } from '@angular/fire/functions';
+import { Http, RequestOptions, Headers } from '@angular/http';
 import { Project } from '../project';
 import { Skill } from '../skill';
 
@@ -13,13 +13,15 @@ export class DatabaseService {
   skillsDB: AngularFireList<Skill>;
   projectsDB: AngularFireList<Project>;
 
-  constructor(private af: AngularFireDatabase, private _http: Http) {
+  constructor(private af: AngularFireDatabase, private _http: Http, private functions: AngularFireFunctions) {
     this.projectsDB = af.list('/Projects');
     this.skillsDB = af.list('/Skills');
   }
 
-  sendMailMessage(name, email, message) {
-    const options = { 'name': name, 'email': email, 'message': message };
-    this._http.post('/email', options).subscribe();
+  sendMailMessage(name: string, email: string, message: string) {
+    const messageObj = `{"name": "${name}", "email": "${email}", "message": "${message}"}`;
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    this._http.post('https://us-central1-ernst-kaese.cloudfunctions.net/email/', messageObj, { headers: headers }).subscribe();
   }
 }

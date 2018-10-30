@@ -1,3 +1,7 @@
+.contact{
+    min-height: 75.5vh;
+}
+
 .ng-valid[required],
 .ng-valid.required {
     border-bottom: 2px solid #42A948;
@@ -11,4 +15,10 @@
 recaptcha {
     position: relative;
     margin: auto;
+}
+
+.check{
+    font-size: 120px;
+    color: #42A948;
+    margin-top: 10%;
 }

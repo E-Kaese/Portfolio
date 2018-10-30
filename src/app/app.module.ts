@@ -17,6 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { DatabaseService } from './services/database.service';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyAV5rrybIZPNbyGmyxBq5y1qrdkEwXjZV0',
@@ -44,6 +45,7 @@ export const firebaseConfig = {
     FontAwesomeModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    AngularFireFunctionsModule,
     HttpModule,
     FormsModule,
     RecaptchaModule.forRoot()

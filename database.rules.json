@@ -1,11 +1,6 @@
 {
   "rules": {
-    ".read": "true",
-    ".write": "true",
-    "Projects": {
-      "$uid": {
-        ".indexOn": "date"
-      }
-    }
+    ".read": true,
+    ".write": false
   }
 }
