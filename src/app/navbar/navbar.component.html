@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top" id="navbar">
-    <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -12,12 +11,10 @@
                 </button>
             </li>
             <li class="nav-item" (click)="toggle()">
-                <button class="nav-link" [routerLink]="['/skills']" [ngx-scroll-to]="'#navbar'"
-                    [ngx-scroll-to-duration]="200">//Skills</button>
+                <button class="nav-link" [routerLink]="['/skills']" [ngx-scroll-to]="'#navbar'" [ngx-scroll-to-duration]="200">//Skills</button>
             </li>
             <li class="nav-item" (click)="toggle()">
-                <button class="nav-link" [routerLink]="['/contact']" [ngx-scroll-to]="'#navbar'"
-                    [ngx-scroll-to-duration]="200">//Contact Me</button>
+                <button class="nav-link" [routerLink]="['/contact']" [ngx-scroll-to]="'#navbar'" [ngx-scroll-to-duration]="200">//Contact Me</button>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto icons">
@@ -32,6 +29,13 @@
             <li class="nav-item mt-2 mx-2">
                 <a class="text-light" href="https://www.instagram.com/ernst_kaese/" target="_blank"><i class="fab fa-instagram"
                         aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item mt-2 mx-2">
+                <a class="text-light" href="https://www.twitter.com/kaeseernst" target="_blank"><i class="fab fa-twitter"
+                        aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item mt-1 mx-2">
+                <a class="text-light" href="https://qwertygames.co.za" target="_blank"><img src="../../assets/Qwerty Logo.png" alt="Logo" class="logo"></a>
             </li>
             <li class="nav-item text-center" (click)="toggle()">
                 <button class="nav-link" [ngx-scroll-to]="'#start'" [ngx-scroll-to-duration]="200">

@@ -1,29 +1,33 @@
-.links{
+.links {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
 
-.icons{
+.icons {
     font-size: 30px;
 }
 
-.up{
+.up {
     font-size: 12px;
 }
 
-button{
+button {
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0px;
 }
 
-button :focus{
+button :focus {
     border: none;
 }
 
+.logo {
+    width: 32px;
+}
+
 @media screen and (max-width: 600px) {
-    .icons{
+    .icons {
         display: none;
     }
 }
